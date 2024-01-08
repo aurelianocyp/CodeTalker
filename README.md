@@ -34,6 +34,7 @@ Other necessary packages:
 pip install -r requirements.txt
 ```
 - ffmpeg
+- pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
 - [MPI-IS/mesh](https://github.com/MPI-IS/mesh)
 
 IMPORTANT: Please make sure to modify the `site-packages/torch/nn/modules/conv.py` file by commenting out the `self.padding_mode != 'zeros'` line to allow for replicated padding for ConvTranspose1d as shown [here](https://github.com/NVIDIA/tacotron2/issues/182).
