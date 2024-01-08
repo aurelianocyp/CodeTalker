@@ -14,10 +14,6 @@ Official PyTorch implementation for the paper:
 
 > We propose CodeTalker by casting speech-driven facial animation as a code query task in a finite proxy space of the learned codebook. Given the raw audio and a 3D neutral face template, our CodeTalker can produce vivid and realistic 3D facial motions with subtle expressions and accurate lip movements. 
 
-## **Changelog**
-- 2023.06.16 Provide a Colab online demo.
-- 2023.04.03 Release code and model weights!
-
 
 <!-- ## **TODO**
 
@@ -25,7 +21,7 @@ Official PyTorch implementation for the paper:
 
 ## **Environment**
 - Linux
-- Python 3.6+
+- Python 3.8
 - Pytorch 1.9.1
 - CUDA 11.1 (GPU with at least 11GB VRAM)
 
