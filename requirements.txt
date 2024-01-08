@@ -7,6 +7,6 @@ tqdm
 transformers==4.6.1
 trimesh==3.9.27
 pyrender==0.1.45
-pyopengl==3.1.5
+pyopengl==3.1.0
 pyglet==1.5.27
 opencv-python
