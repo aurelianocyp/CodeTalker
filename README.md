@@ -75,7 +75,7 @@ Please replace `<exp_name>` with your own experiment name, `<vocaset|BIWI>` by t
 ```
 sh scripts/train.sh CodeTalker_s1 config/vocaset/stage1.yaml vocaset s1
 ```
-
+如果在训练的时候报VQAutoEncoder error，可以参考https://github.com/Doubiiu/CodeTalker/issues/5
 ### **Training for Speech-Driven Motion Synthesis**
 Make sure the paths of pre-trained models are correct, i.e., `vqvae_pretrained_path` and `wav2vec2model_path` in `config/<vocaset|BIWI>/stage2.yaml`.
 ```
