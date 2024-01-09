@@ -7,6 +7,7 @@ tqdm
 transformers==4.6.1
 trimesh==3.9.27
 pyrender==0.1.45
-pyopengl==3.1.0
+pyopengl==3.1.5
 pyglet==1.5.27
 opencv-python
+#pyrender对pyopengl的版本要求可以忽略
