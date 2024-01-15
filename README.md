@@ -52,9 +52,9 @@ Follow the [`BIWI/README.md`](BIWI/README.md) to preprocess BIWI dataset and put
 Download the pretrained models from [biwi_stage1.pth.tar](https://drive.google.com/file/d/1FSxey5Qug3MgAn69ymwFt8iuvwK6u37d/view?usp=sharing) & [biwi_stage2.pth.tar](https://drive.google.com/file/d/1gSNo9KYeIf6Mx3VYjRXQJBcg7Qv8UiUl/view?usp=sharing) and [vocaset_stage1.pth.tar](https://drive.google.com/file/d/1RszIMsxcWX7WPlaODqJvax8M_dnCIzk5/view?usp=sharing) & [vocaset_stage2.pth.tar](https://drive.google.com/file/d/1phqJ_6AqTJmMdSq-__KY6eVwN4J9iCGP/view?usp=sharing). Put the pretrained models under `BIWI` and `VOCASET` folders, respectively. Given the audio signal,
 
 - to animate a mesh in FLAME topology, run: 
-	```
-	sh scripts/demo.sh vocaset
-	```
+```
+sh scripts/demo.sh vocaset
+```
  可能需要开启一下代理`source /etc/network_turbo`，否则会出现connection error报错。如果出现了osmesa报错，则apt-get install -y python-opengl libosmesa6
  
  如果遇到 RuntimeError: The shape of the 3D attn_mask is torch.Size，是models.utils.py里的max_seq_len=600限制了最大序列，可以通过更改这个600到更大来测试性能。但是改了后需要自行训练，因为预训练模型是600
