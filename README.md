@@ -55,7 +55,7 @@ Download the pretrained models from [biwi_stage1.pth.tar](https://drive.google.c
 	```
 	sh scripts/demo.sh vocaset
 	```
- 可能需要开启一下代理，否则会出现connection error报错。如果出现了osmesa报错，则apt-get install -y python-opengl libosmesa6
+ 可能需要开启一下代理`source /etc/network_turbo`，否则会出现connection error报错。如果出现了osmesa报错，则apt-get install -y python-opengl libosmesa6
 - to animate a mesh in BIWI topology, run: 
 	```
 	sh scripts/demo.sh BIWI
