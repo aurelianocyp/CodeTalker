@@ -61,9 +61,9 @@ sh scripts/demo.sh vocaset
 
  改为60000后重新训练了一次，但是效果不好。而且依旧只能生成10s的视频
 - to animate a mesh in BIWI topology, run: 
-	```
-	sh scripts/demo.sh BIWI
-	```
+```
+sh scripts/demo.sh BIWI
+```
 	This script will automatically generate the rendered videos in the `demo/output` folder. You can also put your own test audio file (.wav format) under the `demo/wav` folder and specify the arguments in `DEMO` section of `config/<dataset>/demo.yaml` accordingly (e.g., `demo_wav_path`, `condition`, `subject`, etc.).
 
 ## **Training / Testing**
