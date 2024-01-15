@@ -58,6 +58,8 @@ sh scripts/demo.sh vocaset
  可能需要开启一下代理`source /etc/network_turbo`，否则会出现connection error报错。如果出现了osmesa报错，则apt-get install -y python-opengl libosmesa6
  
  如果遇到 RuntimeError: The shape of the 3D attn_mask is torch.Size，是models.utils.py里的max_seq_len=600限制了最大序列，可以通过更改这个600到更大来测试性能。但是改了后需要自行训练，因为预训练模型是600
+
+ 改为60000后重新训练了一次，但是效果不好。而且依旧只能生成10s的视频
 - to animate a mesh in BIWI topology, run: 
 	```
 	sh scripts/demo.sh BIWI
@@ -79,6 +81,7 @@ sh scripts/train.sh CodeTalker_s1 config/vocaset/stage1.yaml vocaset s1
 ```
 如果在训练的时候报VQAutoEncoder error，可以参考（即在一阶段和二阶段使用不同的代码。）https://github.com/Doubiiu/CodeTalker/issues/5
 二阶段训练时开一下代理
+
 ### **Training for Speech-Driven Motion Synthesis**
 Make sure the paths of pre-trained models are correct, i.e., `vqvae_pretrained_path` and `wav2vec2model_path` in `config/<vocaset|BIWI>/stage2.yaml`.
 ```
