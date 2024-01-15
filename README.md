@@ -84,12 +84,12 @@ Make sure the paths of pre-trained models are correct, i.e., `vqvae_pretrained_p
 ```
 sh scripts/train.sh CodeTalker_s2 config/vocaset/stage2.yaml vocaset s2
 ```
-
+两阶段训练的模型都是在RUN文件夹中，一阶段训练完可直接训练二阶段。
 ### **Testing**
 ```
 sh scripts/test.sh CodeTalker_s2 config/vocaset/stage2.yaml vocaset s2
 ```
-
+这个testing好像不会给出结果，就是训练时的validation类似的，需要结果还是需要用demo来推理。用demo推理的时候改一下demo.yaml里的模型位置就行，用s2的模型。
 ## **Visualization with Audio**
 Modify the paths in `scripts/render.sh` and run: 
 ```
