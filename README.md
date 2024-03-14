@@ -2,9 +2,8 @@
 
 ## **Environment**
 - Linux
-- Python 3.8
-- Pytorch 1.9.1
-- CUDA 11.1 (GPU with at least 11GB VRAM)
+- (GPU with at least 11GB VRAM)
+- ubuntu 20.04 ！！！
 
 Other necessary packages:
 ```
