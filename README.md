@@ -51,6 +51,8 @@ sh scripts/demo.sh vocaset
  
  如果遇到 RuntimeError: The shape of the 3D attn_mask is torch.Size，是models.utils.py里的max_seq_len=600限制了最大序列，可以通过更改这个600到更大来测试性能。但是改了后需要自行训练，因为预训练模型是600
 
+ 运行时的配置文件在config/vocaset中的demo.yaml
+
  改为60000后重新训练了一次，但是效果不好。而且依旧只能生成10s的视频
 - to animate a mesh in BIWI topology, run: 
 ```
