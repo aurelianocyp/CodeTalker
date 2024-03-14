@@ -19,7 +19,11 @@ pip install -r requirements.txt
   -  BOOST_INCLUDE_DIRS=/path/to/boost/include make all
   -  make tests #用于测试是否成功
 
-IMPORTANT: Please make sure to modify the `site-packages/torch/nn/modules/conv.py` file by commenting out the `self.padding_mode != 'zeros'` line to allow for replicated padding for ConvTranspose1d as shown [here](https://github.com/NVIDIA/tacotron2/issues/182).
+IMPORTANT: Please make sure to modify the `site-packages/torch/nn/modules/conv.py` file by commenting out the `self.padding_mode != 'zeros'` line to allow for replicated padding for ConvTranspose1d as shown [here](https://github.com/NVIDIA/tacotron2/issues/182).（没出现这个报错就别管）
+
+每一次重新安装库后都进入mesh测试一下是否还能用。
+
+还需要将wav2vec2-base-960h下载下来，在主目录中创建Facebook/wav2vec2-base-960h目录
 
 ## **Dataset Preparation**
 ### VOCASET
