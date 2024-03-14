@@ -3,7 +3,7 @@
 ## **Environment**
 - Linux
 - (GPU with at least 11GB VRAM)
-- ubuntu 20.04 ！！！
+- ubuntu 20.04 ！！！，可以4090
 
 Other necessary packages:
 ```
