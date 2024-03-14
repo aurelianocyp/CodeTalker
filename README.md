@@ -37,6 +37,7 @@ Follow the [`BIWI/README.md`](BIWI/README.md) to preprocess BIWI dataset and put
 
 ## **Demo**
 Download the pretrained models from [biwi_stage1.pth.tar](https://drive.google.com/file/d/1FSxey5Qug3MgAn69ymwFt8iuvwK6u37d/view?usp=sharing) & [biwi_stage2.pth.tar](https://drive.google.com/file/d/1gSNo9KYeIf6Mx3VYjRXQJBcg7Qv8UiUl/view?usp=sharing) Put the pretrained models under `BIWI`
+
 [vocaset_stage1.pth.tar](https://drive.google.com/file/d/1RszIMsxcWX7WPlaODqJvax8M_dnCIzk5/view?usp=sharing) & [vocaset_stage2.pth.tar](https://drive.google.com/file/d/1phqJ_6AqTJmMdSq-__KY6eVwN4J9iCGP/view?usp=sharing). Put the pretrained models under `VOCASET` folders. Given the audio signal,
 
 - to animate a mesh in FLAME topology, run: 
