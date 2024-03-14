@@ -10,4 +10,4 @@ pyrender==0.1.45
 pyopengl==3.1.5
 pyglet==1.5.27
 opencv-python
-#pyrender对pyopengl的版本要求可以忽略
+#pyrender对pyopengl的版本要求可以忽略, 先把pyopengl==3.1.5注释掉，然后通过pip安装
