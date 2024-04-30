@@ -3,7 +3,7 @@
 ## **Environment**
 - Linux
 - (GPU with at least 11GB VRAM)
-- ubuntu 20.04 ！！！，可以4090,3.8可以
+- ubuntu 20.04 ！！！，可以4090, python 3.8可以
 
 Other necessary packages:
 ```
@@ -57,7 +57,9 @@ Download the pretrained models from [biwi_stage1.pth.tar](https://drive.google.c
 ```
 sh scripts/demo.sh vocaset
 ```
- 可能需要开启一下代理`source /etc/network_turbo`，否则会出现connection error报错。如果出现了osmesa报错，则apt-get install -y python-opengl libosmesa6
+ 可能需要开启一下代理`source /etc/network_turbo`，否则会出现connection error报错。
+ 
+ 如果出现了osmesa报错，则apt-get install -y python-opengl libosmesa6
  
  如果遇到 RuntimeError: The shape of the 3D attn_mask is torch.Size，是models.utils.py里的max_seq_len=600限制了最大序列，可以通过更改这个600到更大来测试性能。但是改了后需要自行训练，因为预训练模型是600 https://github.com/Doubiiu/CodeTalker/issues/48
 
