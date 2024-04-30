@@ -1,7 +1,7 @@
-tensorboardX
+#tensorboardX
 einops
 numpy==1.23.0
-scipy==1.7.1
+scipy
 librosa==0.8.1
 tqdm
 transformers==4.6.1
