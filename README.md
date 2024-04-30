@@ -18,13 +18,14 @@ pip install -r requirements.txt
   -  git clone https://github.com/MPI-IS/mesh.git
   -  cd mesh
   -  python -m pip install pip==22.2.1
+  -  先把mesh文件夹里的requirements删到只剩下pyyaml和opencv-python
   -  BOOST_INCLUDE_DIRS=/path/to/boost/include make all
   -  
   -  make tests #用于测试是否成功
 
 IMPORTANT: Please make sure to modify the `site-packages/torch/nn/modules/conv.py` file by commenting out the `self.padding_mode != 'zeros'` line to allow for replicated padding for ConvTranspose1d as shown [here](https://github.com/NVIDIA/tacotron2/issues/182).（没出现这个报错就别管）
 
-每一次重新安装库后都进入mesh测试一下是否还能用。
+每一次重新安装库后都进入mesh测试一下是否还能用。如果test时输出为OK (skipped=5)，应该就行了。
 
 还需要将wav2vec2-base-960h下载下来，在主目录中创建Facebook/wav2vec2-base-960h目录
 
