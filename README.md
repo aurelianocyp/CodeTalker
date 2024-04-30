@@ -51,6 +51,8 @@ Download the pretrained models from [biwi_stage1.pth.tar](https://drive.google.c
 
 [vocaset_stage1.pth.tar](https://drive.google.com/file/d/1RszIMsxcWX7WPlaODqJvax8M_dnCIzk5/view?usp=sharing) & [vocaset_stage2.pth.tar](https://drive.google.com/file/d/1phqJ_6AqTJmMdSq-__KY6eVwN4J9iCGP/view?usp=sharing). Put the pretrained models under `VOCASET` folders. Given the audio signal,
 
+还需要下载templates.pkl到vacaset文件夹中
+
 - to animate a mesh in FLAME topology, run: 
 ```
 sh scripts/demo.sh vocaset
