@@ -192,13 +192,24 @@ def test(model, wav_file, save_folder, condition, subject):
     tmp_video_file = tempfile.NamedTemporaryFile('w', suffix='.mp4', dir=output_path)
     
     writer = cv2.VideoWriter(tmp_video_file.name, cv2.VideoWriter_fourcc(*'mp4v'), cfg.fps, (800, 800), True)
+    #print("tmp_video_file.name:",tmp_video_file.name)  # /root/autodl-tmp/CodeTalker/demo/output/tmpjylk8x6_.mp4
     center = np.mean(predicted_vertices[0], axis=0)
 
     for i_frame in range(num_frames):
         render_mesh = Mesh(predicted_vertices[i_frame], template.f)
+        if 1:
+            #print("obj saved:", os.path.join(output_path,  '{:05d}'.format(i_frame) + '.obj'))
+            objs_folder = os.path.join(output_path,'objs')
+            os.makedirs(objs_folder, exist_ok=True)
+            render_mesh.write_obj(os.path.join(objs_folder,  'obj_{}.obj'.format(len(os.listdir(objs_folder)))))
         pred_img = render_mesh_helper(cfg,render_mesh, center)
         pred_img = pred_img.astype(np.uint8)
         writer.write(pred_img)
+        if 1:
+            output_folder = os.path.join(output_path,'frames')
+            os.makedirs(output_folder, exist_ok=True)
+            frame_filename = os.path.join(output_folder, 'image_{}.png'.format(len(os.listdir(output_folder))))
+            cv2.imwrite(frame_filename, pred_img)
 
     writer.release()
     file_name = test_name+"_"+cfg.subject+"_condition_"+cfg.condition
