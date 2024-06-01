@@ -39,6 +39,7 @@ Read the vertices/audio data and convert them to .npy/.wav files stored in `voca
 ```
 cd vocaset
 python process_voca_data.py
+# 可能得到的npy只有478而wav只有475个，应该是原始pkl的问题
 ```
 
 ### BIWI
