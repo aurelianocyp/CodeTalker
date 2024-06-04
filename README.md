@@ -2,7 +2,6 @@
 
 ## **Environment**
 - Linux
-- (GPU with at least 11GB VRAM)
 - ubuntu 20.04 ！！！，可以4090, python 3.8可以
 
 Other necessary packages:
