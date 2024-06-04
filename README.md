@@ -128,4 +128,8 @@ sh scripts/cal_metric.sh
 
 - Following the training/testing/visualization pipeline as done for BIWI and vocaset dataset.
 
+### 后记
+
+关于眨眼：https://github.com/Doubiiu/CodeTalker/issues/44
+
 
